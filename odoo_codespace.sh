@@ -21,7 +21,7 @@ sudo apt-get install libpq-dev python3-dev libxml2-dev libxslt1-dev libldap2-dev
 #--------------------------------------------------
 # Install Wkhtmltopdf
 #--------------------------------------------------
-sudo apt install ./wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+sudo apt install -y ./wkhtmltox_0.12.6.1-2.jammy_amd64.deb
 
 echo -e "\n---- Setup python virtual environment ----"
 sudo pip3 install virtualenv
@@ -29,5 +29,5 @@ virtualenv odoo-venv
 source "odoo-venv/bin/activate"
 
 echo -e "\n---- Install python packages/requirements ----"
-pip install wheel
-pip install -r https://github.com/odoo/odoo/raw/17.0/requirements.txt
+pip install --no-input wheel
+pip install --no-input -r https://github.com/odoo/odoo/raw/17.0/requirements.txt
