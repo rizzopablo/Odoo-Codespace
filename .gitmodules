@@ -3,3 +3,9 @@
 	url = https://github.com/odoo/odoo.git
 	branch = 19.0
 	shallow = true
+
+[submodule "enterprise"]
+	path = enterprise
+	url = git@github.com:odoo/enterprise.git
+	branch = 19.0
+	shallow = true
